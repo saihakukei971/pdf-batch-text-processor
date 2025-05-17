@@ -1,0 +1,34 @@
+# PDFテキスト整形ツール 設定ファイル
+
+# アプリケーション設定
+app_name = "PDFテキスト整形ツール"
+version = "2.0.0"
+
+# 出力設定
+output_dir = "outputs"
+log_dir = "log"
+
+# 整形設定
+[formatting]
+# 改行設定
+break_at_kuten = true        # 。(句点)で改行
+break_at_dot = false         # ．(ドット)で改行
+paragraph_break = false      # 段落(字下げ)で改行
+english_mode = false         # 英文用のピリオド処理
+
+# 「」の処理
+quote_break_inside = false   # 「」の中も改行する
+add_closing_quote = true     # 改行時に」を付ける
+
+# 削除設定
+remove_tab = true            # タブを削除
+remove_space = true          # スペースを削除
+
+# 箇条書き記号
+bullet_symbols = [
+    "・", "●", "〇", "■", "□", "◆", "◇", "▲", "△", "▼", "▽"
+]
+
+# カスタム設定
+custom_bullets = []          # カスタム箇条書き記号
+custom_break_chars = []      # カスタム改行文字
